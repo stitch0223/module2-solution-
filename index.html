@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>module2-solution</title>
-<style>
-	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="Style.css">
 /********** Base styles **********/
 * {
     box-sizing: border-box;
@@ -201,30 +201,29 @@ p {
     background-color: lemonchiffon;
     color: black;
 }
-</style>
-<body >
-<h1>Our Menu </h1>
-	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
-		<div>
-			<p class="s1">Chicken</p>
-			<p class="content">
-			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra, eu suscipit elit cursus. Praesent sed libero turpis. Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit. Vivamus facilisis semper risus, et efficitur justo suscipit ac.
-			</p>
-		</div>
-	</section>
-	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
-		<div>
-			<p class="s2">Beef</p>
-			<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra, eu suscipit elit cursus. Praesent sed libero turpis. Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit. Vivamus facilisis semper risus, et efficitur justo suscipit ac.</p>
-		</div>
-	</section>
-	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
-	<div>
-		<p class="s1">Sushi</p>
-			<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique ipsum sit amet nunc posuere, at dictum massa fermentum. Sed tempor turpis quis dui pharetra, eu suscipit elit cursus. Praesent sed libero turpis. Aliquam varius elit mauris, vestibulum laoreet leo rhoncus ac. Fusce at facilisis velit. Vivamus facilisis semper risus, et efficitur justo suscipit ac.</p>
-	</div>
+	</head>
+<body>
+<h1>My Menu</h1>
+
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 outerContainer">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="title chicken"><p>Chicken</p></div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 outerContainer">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="title beef"><p>Beef</p></div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 outerContainer">
+        <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="title sushi"><p>Sushi</p></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
-	
-
