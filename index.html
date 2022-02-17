@@ -30,80 +30,81 @@
 </body>
 </html>
 
+
+   
 * {
-	box-sizing: border-box;
-	margin: 0;
-	font-family: Sans-Serif;
-}
-h1 {
-	text-align: center;
-	margin: 10px;
+  box-sizing: border-box;
 }
 
-section {	
-	float: left;
+html {
+  background-color: rgb(226, 226, 74);
 }
 
-div {
-	background-color: #C0C0C0;
-	border: solid 2px black;
-}
+section {
+  border: 1px white solid;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  /* margin: 1%; */
 
-h2 {
-	border-bottom: solid 2px black;
-	border-left: solid 2px black;
-	float: right;
-	padding-left: 20px;
-	padding-right: 20px  
+  padding: 10px;
+  padding-top: 60px;
+  color: white;
+  background-color: rgb(0, 0, 0);
 }
-
 p {
-	clear: both;
-	padding: 5px;
+  text-align: center;
 }
 
-.chicken {
-	background-color: yellow;
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.beef {
-	background-color: maroon;
+section > span {
+  background-color: rgb(109, 109, 109);
 }
 
-.sushi {
-	background-color: green;
+span p.title {
+  font-weight: bold;
 }
 
-@media (min-width: 992px) {
-	section {
-		width: 33.33%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
+span {
+  border: 1px solid black;
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
+/* Media Queires */
+/* Destop */
+/* 992px */
+
+/* Tablet */
+/* 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-	section.normal {
-		width: 50%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	section.third {
-		margin-top: 10px;
-		width: 100%;
-        padding-left: 10px;
-		padding-right: 10px;
-	}
+  section.first {
+    width: 50%;
+  }
 
+  section.second {
+    width: 50%;
+  }
+  section.third {
+    width: 100%;
+    /* margin-top: 20px; */
+  }
 }
 
+/* mobile */
+/* max-width 767px */
 @media (max-width: 767px) {
-	section {
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-bottom: 10px
-	}
-
+  section {
+    width: 100%;
+  }
+}
 }
